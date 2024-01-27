@@ -11,6 +11,13 @@ async function main() {
   await page.screenshot({'path': 'oxylabs_js.png'})
   await page.pdf({path: 'oxylabs.pdf', format: 'A4'});
 
+//   await page.goto("https://en.wikipedia.org/wiki/Web_scraping");
+ 
+//   title = await page.evaluate(() => {
+//     return document.querySelector("#firstHeading").textContent.trim();
+//   });
+//   console.log(title);
+
   await browser.close();
 }
 
