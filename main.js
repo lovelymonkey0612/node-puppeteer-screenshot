@@ -9,6 +9,8 @@ async function main() {
     height: 1080,
   });
   await page.screenshot({'path': 'oxylabs_js.png'})
+  await page.pdf({path: 'oxylabs.pdf', format: 'A4'});
+
   await browser.close();
 }
 
